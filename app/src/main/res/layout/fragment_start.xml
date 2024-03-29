@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/skull1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        android:id="@+id/image_skull"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_skull"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:text="My Mobile App"
+        android:id="@+id/text_start"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_start"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lavanda"
+        android:textSize="25sp"
+        android:text="ListView"
+        android:id="@+id/buttonToList"/>
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonToList"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lavanda"
+        android:textSize="25sp"
+        android:text="RecyclerView"
+        android:id="@+id/buttonToRecycler"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
