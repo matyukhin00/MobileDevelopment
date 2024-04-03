@@ -10,6 +10,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -41,12 +42,12 @@ public class ListFragment extends Fragment {
         view.findViewById(R.id.buttonHomeList).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                requireActivity().getSupportFragmentManager()
-                        .beginTransaction()
-                        .replace(R.id.fragment_container_view, new StartFragment())
-                        .addToBackStack(null).commit();
+                Navigation.findNavController(v).navigate(R.id.listToStart);
             }
         });
+        assert getArguments() != null;
+        String result = getArguments().getString("listKey");
+        Toast.makeText(getContext(), result, Toast.LENGTH_LONG).show();
         return view;
     }
 }
