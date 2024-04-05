@@ -17,6 +17,9 @@
         android:theme="@style/Theme.MobileDevelopment"
         tools:targetApi="31">
 
+        <service
+            android:name=".OverlayService">
+        </service>
 
         <activity
             android:name=".MainActivity"
