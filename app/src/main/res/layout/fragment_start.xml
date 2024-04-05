@@ -49,4 +49,16 @@
         android:text="RecyclerView"
         android:id="@+id/buttonToRecycler"/>
 
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonToRecycler"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/lavanda"
+        android:textSize="25sp"
+        android:text="Notification"
+        android:id="@+id/buttonNotification"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
