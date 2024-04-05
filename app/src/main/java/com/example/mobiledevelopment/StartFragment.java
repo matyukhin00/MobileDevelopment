@@ -67,7 +67,7 @@ public class StartFragment extends Fragment {
                         .setPriority(NotificationCompat.PRIORITY_HIGH);
 
                 NotificationManagerCompat notificationManager = NotificationManagerCompat.from(requireContext());
-                if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission) != PackageManager.PERMISSION_GRANTED)
+                if (ActivityCompat.checkSelfPermission(requireContext(), Manifest.permission.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION) != PackageManager.PERMISSION_GRANTED)
                     return;
                 notificationManager.notify(notificationId, builder.build());
 
